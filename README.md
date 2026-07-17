@@ -1,55 +1,50 @@
 # First English Lutheran Church
 
-Independent website (Option A: own folder, GitHub repo, and Netlify site).
+Modern redesign of **[felconline.org](https://www.felconline.org/)** — First English Lutheran Church, Richmond, Indiana.
 
-## Local
+**Local folder:** `C:\Users\dexte\first-english-lutheran`  
+**GitHub:** https://github.com/dextermelling-design/first-english-lutheran
 
-```
-C:\Users\dexte\first-english-lutheran
-```
+## Content source
 
-Preview:
+Public content adapted from the current SnapPages site at felconline.org:
 
-```powershell
-start C:\Users\dexte\first-english-lutheran\index.html
-```
+- Address, phone, and Sunday schedule  
+- Mission: *Reaching Wider, Growing Deeper, Loving Stronger*  
+- History (1884 → present)  
+- Beliefs & ELCA affiliation  
+- Staff directory  
+- Growing Deeper / get involved ministries  
 
 ## Pages
 
 | Page | File |
 |------|------|
 | Home | `index.html` |
-| About | `about.html` |
+| Our Story | `about.html` |
+| Beliefs | `beliefs.html` |
 | Worship | `worship.html` |
-| Ministries | `ministries.html` |
+| Get Involved | `ministries.html` |
+| Staff | `staff.html` |
 | Contact | `contact.html` |
 
-## Placeholders to customize
+## Preview
 
-- Address, phone, email
-- Worship / office hours
-- Pastor name and history
-- Denomination / affiliation
-- Map embed on Contact
-
-## Pipeline
-
-```
-Edit → git commit → git push → GitHub → Netlify auto-deploy
+```powershell
+start C:\Users\dexte\first-english-lutheran\index.html
 ```
 
-### Connect Netlify (one-time)
+## Deploy (Netlify)
 
-1. [app.netlify.com](https://app.netlify.com) → **Add new site** → **Import an existing project**
-2. Choose **GitHub** → repo **`first-english-lutheran`**
-3. Branch: `main` · Build command: *(empty)* · Publish directory: `.`
-4. Deploy — you’ll get a new `*.netlify.app` URL
+1. [app.netlify.com](https://app.netlify.com) → **Add new site** → import **`first-english-lutheran`**
+2. Branch `main` · build empty · publish `.`
+3. Later: point **felconline.org** DNS to this Netlify site when ready to replace the old site
 
-## Day-to-day
+## Push updates
 
 ```powershell
 cd C:\Users\dexte\first-english-lutheran
 git add .
-git commit -m "Update site content"
+git commit -m "Describe change"
 git push
 ```

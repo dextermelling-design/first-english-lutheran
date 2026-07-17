@@ -336,6 +336,107 @@ h1, h2, h3 {
   background: var(--white);
 }
 
+.section-navy {
+  background: var(--navy-deep);
+  color: var(--white);
+  text-align: center;
+}
+
+.section-navy h2 {
+  color: var(--white);
+}
+
+.section-navy p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.mission-band {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.mission-band h2 {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.mission-band .btn {
+  margin-top: 0.5rem;
+}
+
+.center-note {
+  text-align: center;
+  margin: 1.75rem 0 0;
+}
+
+.narrow {
+  max-width: 42rem;
+}
+
+.mission-quote {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--gold);
+  background: var(--white);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--navy);
+  font-style: italic;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.values-list li {
+  padding: 0.65rem 0 0.65rem 1.25rem;
+  border-bottom: 1px solid rgba(26, 39, 68, 0.08);
+  position: relative;
+}
+
+.values-list li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.65rem;
+  top: 0.95rem;
+}
+
+.card-grid.tight {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.muted-sm {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.75rem !important;
+}
+
+.pastor-card {
+  border-top: 4px solid var(--gold);
+}
+
+.pastor-card h2 {
+  margin-top: 0;
+}
+
+.map-embed {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(26, 39, 68, 0.08);
+  min-height: 18rem;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 18rem;
+  border: 0;
+  display: block;
+}
+
 .section-head {
   max-width: 36rem;
   margin-bottom: 2rem;

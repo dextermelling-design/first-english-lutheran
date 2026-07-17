@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact First English Lutheran Church — address, phone, and visitor information." />
+  <meta name="description" content="Contact First English Lutheran Church — 2727 East Main St., Richmond, IN 47374. Phone 765-962-5773." />
   <title>Contact · First English Lutheran Church</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +18,7 @@
         <span class="brand-mark" aria-hidden="true">✝</span>
         <span class="brand-text">
           <strong>First English</strong>
-          <span>Lutheran Church</span>
+          <span>Lutheran Church · Richmond, IN</span>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
@@ -27,9 +27,11 @@
       </button>
       <nav id="site-nav" class="site-nav" data-nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="about.html">Our Story</a>
+        <a href="beliefs.html">Beliefs</a>
         <a href="worship.html">Worship</a>
-        <a href="ministries.html">Ministries</a>
+        <a href="ministries.html">Get Involved</a>
+        <a href="staff.html">Staff</a>
         <a href="contact.html" aria-current="page">Contact</a>
       </nav>
     </div>
@@ -38,9 +40,9 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">We would love to hear from you</p>
+        <p class="eyebrow">We would love to meet you</p>
         <h1>Contact &amp; visit</h1>
-        <p class="hero-lede">Find us, call the office, or send a message.</p>
+        <p class="hero-lede">Find us on East Main Street in Richmond — or send a note to the office.</p>
       </div>
     </section>
 
@@ -50,30 +52,37 @@
           <h2>Church office</h2>
           <p>
             <strong>First English Lutheran Church</strong><br />
-            123 Church Street<br />
-            Your City, ST 00000
+            2727 East Main St.<br />
+            Richmond, IN 47374
           </p>
           <p>
-            <strong>Phone:</strong> (555) 555-0100<br />
-            <strong>Email:</strong> <a href="mailto:office@example.org">office@example.org</a>
+            <strong>Phone:</strong> <a href="tel:7659625773">765-962-5773</a><br />
+            <strong>Pastor (ext. 1):</strong>
+            <a href="mailto:pastorchip@felconline.org">pastorchip@felconline.org</a><br />
+            <strong>Parish administrator:</strong>
+            <a href="mailto:parishadministrator@felconline.org">parishadministrator@felconline.org</a><br />
+            <strong>General:</strong>
+            <a href="mailto:felc@felconline.org">felc@felconline.org</a>
           </p>
-          <p>
-            <strong>Office hours:</strong><br />
-            Monday–Thursday, 9:00 AM – 1:00 PM<br />
-            <span class="note">(Placeholder — update to real hours)</span>
-          </p>
+          <h2>Sunday worship</h2>
+          <ul>
+            <li><strong>8:00 AM</strong> — Sanctuary (traditional)</li>
+            <li><strong>9:15 AM</strong> — Fellowship Worship Center (contemporary)</li>
+            <li><strong>10:30 AM</strong> — Sanctuary (traditional)</li>
+          </ul>
+          <p>Coffee and donuts served 8:15–9:15 AM.</p>
           <h2>Plan your visit</h2>
           <ul class="checklist">
-            <li>Parking is available on-site and along the street</li>
-            <li>Main entrance faces Church Street</li>
-            <li>Accessible seating and restrooms available</li>
-            <li>Ushers can help with large-print materials</li>
+            <li>Located at 2727 East Main St. along the historic National Trail</li>
+            <li>Three Sunday service options to fit your schedule</li>
+            <li>Greeters glad to help you find a seat</li>
+            <li>All people are welcome</li>
           </ul>
         </div>
         <aside class="card highlight">
-          <h2>Send a note</h2>
-          <p class="card-meta">This form opens your email app (no server required).</p>
-          <form class="contact-form" action="mailto:office@example.org" method="post" enctype="text/plain">
+          <h2>Send a message</h2>
+          <p class="muted-sm">Opens your email app to the parish office.</p>
+          <form class="contact-form" action="mailto:parishadministrator@felconline.org" method="post" enctype="text/plain">
             <label>
               Your name
               <input type="text" name="name" required autocomplete="name" />
@@ -88,8 +97,8 @@
             </label>
             <button class="btn btn-primary" type="submit">Open email to send</button>
           </form>
-          <p class="note">
-            Later we can connect a real form service (Netlify Forms, Formspree, etc.).
+          <p class="muted-sm">
+            We can upgrade this later to Netlify Forms so messages arrive without opening a mail app.
           </p>
         </aside>
       </div>
@@ -97,12 +106,19 @@
 
     <section class="section section-alt">
       <div class="container">
-        <div class="map-placeholder" role="img" aria-label="Map placeholder">
-          <div>
-            <strong>Map placeholder</strong>
-            <p>Add a Google Maps embed when the real address is confirmed.</p>
-          </div>
+        <div class="map-embed">
+          <iframe
+            title="Map to First English Lutheran Church, Richmond IN"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=2727+East+Main+St.+Richmond+IN+47374&z=15&output=embed"
+          ></iframe>
         </div>
+        <p class="center-note">
+          <a class="text-link" href="https://maps.google.com/?q=2727+East+Main+St.+Richmond+IN+47374" rel="noopener noreferrer" target="_blank">
+            Open in Google Maps →
+          </a>
+        </p>
       </div>
     </section>
   </main>
@@ -111,22 +127,24 @@
     <div class="container footer-grid">
       <div>
         <strong>First English Lutheran Church</strong>
-        <p>123 Church Street · Your City, ST 00000</p>
-        <p>(555) 555-0100 · office@example.org</p>
+        <p>2727 East Main St.<br />Richmond, IN 47374</p>
+        <p><a href="tel:7659625773">765-962-5773</a></p>
       </div>
       <div>
-        <strong>Worship</strong>
-        <p>Sundays at 10:00 AM</p>
-        <p>Sunday School at 9:00 AM</p>
+        <strong>Sunday worship</strong>
+        <p>8:00 AM — Sanctuary</p>
+        <p>9:15 AM — Fellowship Worship Center</p>
+        <p>10:30 AM — Sanctuary</p>
       </div>
       <div>
         <strong>Explore</strong>
-        <p><a href="about.html">About</a> · <a href="worship.html">Worship</a></p>
-        <p><a href="ministries.html">Ministries</a> · <a href="contact.html">Contact</a></p>
+        <p><a href="about.html">Our Story</a> · <a href="beliefs.html">Beliefs</a></p>
+        <p><a href="worship.html">Worship</a> · <a href="ministries.html">Get Involved</a></p>
+        <p><a href="staff.html">Staff</a> · <a href="contact.html">Contact</a></p>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© <span data-year></span> First English Lutheran Church. All rights reserved.</p>
+      <p>© <span data-year></span> First English Lutheran Church · Richmond, Indiana</p>
     </div>
   </footer>
   <script src="script.js"></script>
