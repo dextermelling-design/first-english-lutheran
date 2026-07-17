@@ -10,7 +10,7 @@ Modern redesign of **[felconline.org](https://www.felconline.org/)** — First E
 Public content adapted from the current SnapPages site at felconline.org:
 
 - Address, phone, and Sunday schedule  
-- Mission: *Reaching Wider, Growing Deeper, Loving Stronger*  
+- Motto: *Reaching, Growing, Loving*  
 - History (1884 → present)  
 - Beliefs & ELCA affiliation  
 - Staff directory  
