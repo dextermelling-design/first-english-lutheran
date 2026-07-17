@@ -524,10 +524,96 @@ h1, h2, h3 {
   align-self: flex-start;
 }
 
+/* Church picnic */
+.picnic-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.9fr) 1.1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.picnic-flyer-wrap {
+  position: sticky;
+  top: calc(var(--header-h) + 1rem);
+}
+
+.picnic-flyer {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(26, 39, 68, 0.08);
+  background: var(--white);
+}
+
+.picnic-details .schedule dd {
+  white-space: normal;
+  text-align: right;
+}
+
+.picnic-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.25rem;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid rgba(26, 39, 68, 0.08);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.35rem;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.picnic-banner:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  color: inherit;
+}
+
+.picnic-banner img {
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.picnic-banner h3 {
+  margin: 0 0 0.25rem;
+}
+
+.picnic-banner p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.picnic-banner .btn {
+  pointer-events: none;
+}
+
 @media (max-width: 860px) {
   .stream-grid,
-  .media-feature {
+  .media-feature,
+  .picnic-layout {
     grid-template-columns: 1fr;
+  }
+
+  .picnic-flyer-wrap {
+    position: static;
+    max-width: 22rem;
+    margin-inline: auto;
+  }
+
+  .picnic-banner {
+    grid-template-columns: auto 1fr;
+  }
+
+  .picnic-banner .btn {
+    grid-column: 1 / -1;
+    justify-self: start;
   }
 
   .brand-logo {

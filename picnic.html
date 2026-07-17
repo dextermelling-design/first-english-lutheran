@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="All Church Picnic at First English Lutheran Church — Sunday, August 2, 10:30 AM–1:00 PM. Food provided; all ages welcome. Sign up online." />
+  <title>Church Picnic · First English Lutheran Church</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">&#10013;</span>
+        <span class="brand-text">
+          <strong>First English</strong>
+          <span>Lutheran Church · Richmond, IN</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="beliefs.html">Beliefs</a>
+        <a href="worship.html">Worship</a>
+        <a href="live-stream.html">Live Stream</a>
+        <a href="past-live-streams.html">Past Streams</a>
+        <a href="picnic.html" aria-current="page">Picnic</a>
+        <a href="ministries.html">Get Involved</a>
+        <a href="staff.html">Staff</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">All ages welcome</p>
+        <h1>Church picnic</h1>
+        <p class="hero-lede">Join us for fun, food, and fellowship — Sunday, August 2.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container picnic-layout">
+        <div class="picnic-flyer-wrap">
+          <img
+            class="picnic-flyer"
+            src="assets/church-picnic-flyer.png"
+            alt="Church Picnic flyer — August 2, 10:30 AM to 1:00 PM, everyone welcome"
+            width="536"
+            height="752"
+          />
+        </div>
+
+        <div>
+          <div class="card highlight picnic-details">
+            <h2>Event details</h2>
+            <dl class="schedule">
+              <div>
+                <dt>Date</dt>
+                <dd>Sunday, August 2</dd>
+              </div>
+              <div>
+                <dt>Time</dt>
+                <dd>10:30 AM – 1:00 PM</dd>
+              </div>
+              <div>
+                <dt>Where</dt>
+                <dd>First English Lutheran Church</dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>2727 East Main St., Richmond, IN</dd>
+              </div>
+            </dl>
+            <ul class="checklist" style="margin-top: 1.25rem;">
+              <li>Food provided</li>
+              <li>All ages welcome</li>
+              <li>Fun, food, and fellowship</li>
+              <li>Follows joint worship</li>
+            </ul>
+            <p class="muted-sm">
+              Questions? Call <a href="tel:7659625773">765-962-5773</a> or
+              <a href="contact.html">contact the office</a>.
+            </p>
+          </div>
+
+          <div class="card highlight" style="margin-top: 1.25rem;" id="signup">
+            <h2>Sign up</h2>
+            <p class="muted-sm">Let us know you are coming so we can plan for food and space.</p>
+            <form
+              class="contact-form"
+              name="church-picnic"
+              method="POST"
+              action="/picnic-thanks.html"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              netlify
+            >
+              <input type="hidden" name="form-name" value="church-picnic" />
+              <p class="honeypot" aria-hidden="true">
+                <label>
+                  Don’t fill this out if you’re human:
+                  <input type="text" name="bot-field" tabindex="-1" autocomplete="off" />
+                </label>
+              </p>
+              <label>
+                First name
+                <input type="text" name="first-name" required autocomplete="given-name" />
+              </label>
+              <label>
+                Last name
+                <input type="text" name="last-name" required autocomplete="family-name" />
+              </label>
+              <label>
+                How many are coming?
+                <input type="number" name="how-many" min="1" max="50" required inputmode="numeric" />
+              </label>
+              <label>
+                Email <span class="optional">(optional)</span>
+                <input type="email" name="email" autocomplete="email" />
+              </label>
+              <label>
+                Phone <span class="optional">(optional)</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+              <label>
+                Notes <span class="optional">(optional)</span>
+                <textarea name="notes" rows="3" placeholder="Dietary needs, questions, etc."></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Submit signup</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>First English Lutheran Church</strong>
+        <p>2727 East Main St.<br />Richmond, IN 47374</p>
+        <p><a href="tel:7659625773">765-962-5773</a></p>
+      </div>
+      <div>
+        <strong>Sunday worship</strong>
+        <p>8:00 AM — Sanctuary</p>
+        <p>9:15 AM — Fellowship Worship Center</p>
+        <p>10:30 AM — Sanctuary</p>
+      </div>
+      <div>
+        <strong>Explore</strong>
+        <p><a href="picnic.html">Church Picnic</a> · <a href="contact.html">Contact</a></p>
+        <p><a href="worship.html">Worship</a> · <a href="index.html">Home</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> First English Lutheran Church · Richmond, Indiana</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
