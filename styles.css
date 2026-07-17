@@ -742,6 +742,20 @@ h3 {
   margin-top: 1rem;
 }
 
+.contact-form .honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form .optional {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
 .contact-form label {
   display: grid;
   gap: 0.35rem;
