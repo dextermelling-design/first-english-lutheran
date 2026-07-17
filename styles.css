@@ -13,7 +13,7 @@
   --radius: 1rem;
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-  --header-h: 4.25rem;
+  --header-h: 4.75rem;
 }
 
 *,
@@ -105,10 +105,19 @@ a:hover {
   gap: 0.75rem;
   text-decoration: none;
   color: var(--navy);
+  flex-shrink: 0;
 }
 
 .brand:hover {
   color: var(--navy);
+}
+
+.brand-logo {
+  height: 3.35rem;
+  width: auto;
+  max-width: min(280px, 48vw);
+  object-fit: contain;
+  object-position: left center;
 }
 
 .brand-mark {
@@ -153,9 +162,10 @@ a:hover {
   text-decoration: none;
   color: var(--navy-soft);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.86rem;
   padding: 0.35rem 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -435,6 +445,94 @@ h1, h2, h3 {
   height: 18rem;
   border: 0;
   display: block;
+}
+
+/* Media / live stream */
+.stream-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--navy-deep);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(26, 39, 68, 0.08);
+}
+
+.stream-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.stream-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.stream-card {
+  background: var(--white);
+  border: 1px solid rgba(26, 39, 68, 0.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.stream-card .stream-embed {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid rgba(26, 39, 68, 0.08);
+}
+
+.stream-card-body {
+  padding: 1rem 1.15rem 1.15rem;
+}
+
+.stream-card-body h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.stream-card-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.media-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.media-feature .card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.media-feature .card p:last-of-type {
+  flex: 1;
+}
+
+.media-feature .btn {
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 860px) {
+  .stream-grid,
+  .media-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-logo {
+    height: 2.75rem;
+  }
 }
 
 .section-head {
